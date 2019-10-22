@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "IRANSansWeb Light";
+    src: url("../fonts/IRANSansLight.eot");
+    src: url("../fonts/IRANSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansLight.woff") format("woff"), url("../fonts/IRANSansLight.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "IRANSansWeb Medium";
+    src: url("../fonts/IRANSansBold.eot");
+    src: url("../fonts/IRANSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/IRANSansBold.woff") format("woff"), url("../fonts/IRANSansBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "IRANSans";
+    src: url("../fonts/IranRegular.eot");
+    src: url("../fonts/IranRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/IranRegular.woff") format("woff"), url("../fonts/IranRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+.IRANSansWeb-Light {
+    font-family: "IRANSansWeb Light", sans-serif;
+}
+
+.IRANSansWeb-Medium {
+    font-family: "IRANSansWeb Medium", sans-serif;
+}
+
+.IRANSansWeb-Regular {
+    font-family: "IRANSans", sans-serif;
+}
+
+body {
+    background-color: #132030;
+}
