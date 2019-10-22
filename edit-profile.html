@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spring System Prototype | Edit profile</title>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="assets/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="assets/favicon/apple-touch-icon.png?v=1.3" rel="apple-touch-icon" sizes="180x180">
+    <link href="assets/favicon/favicon-32x32.png?v=1.3" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/favicon/favicon-16x16.png?v=1.3" rel="icon" sizes="16x16" type="image/png">
+    <link href="assets/favicon/android-icon-192x192.png?v=1.3" rel="icon" sizes="192x192" type="image/png">
+    <link href="assets/favicon/manifest.json" rel="manifest">
+    <link color="#123f0e" href="assets/favicon/safari-pinned-tab.svg?v=1.3" rel="mask-icon">
+    <link href="assets/favicon/favicon.ico?v=1.3" rel="shortcut icon">
+    <meta content="#123f0e" name="msapplication-TileColor">
+    <meta content="assets/favicon/browserconfig.xml?v=1.3" name="msapplication-config">
+    <meta content="#0f320c" name="theme-color">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/css/spring-system.css" rel="stylesheet"/>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body dir="rtl">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <a class="navbar-brand IRANSansWeb-Medium" href="#">
+        <!--suppress CheckImageSize -->
+        <img alt="Spring System" class="d-inline-block" height="40" src="assets/image/spring_512×512.png"
+             width="40">سیستم اسپرینگ
+    </a>
+    <button aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            data-target="#navbarToggler" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item IRANSansWeb-Light">
+                <a class="nav-link" href="index.html">صفحه اصلی </a>
+            </li>
+        </ul>
+        <span class="navbar-text">v1.1</span>
+    </div>
+</nav>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
+            <div class="card text-white bg-dark mt-3 mb-3">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group text-center mb-4">
+                            <a href="/">
+                                <!--suppress CheckImageSize -->
+                                <img alt="Spring System" class="img-fluid mb-1" height="128"
+                                     src="assets/image/spring_512×512.png" width="128">
+                            </a>
+                            <h3 class="IRANSansWeb-Medium">تغییر پروفایل حساب کاربری</h3>
+                        </div>
+                        <div class="form-group">
+                            <figure class="figure d-flex justify-content-center">
+                                <img alt="Profile avatar picture" class="rounded-circle" height="150"
+                                     src="https://via.placeholder.com/150" width="150">
+                            </figure>
+                            <div class="custom-file">
+                                <input class="custom-file-input" id="avatar-file" type="file">
+                                <label class="custom-file-label IRANSansWeb-Light" data-browse="انتخاب"
+                                       for="avatar-file">انتخاب فایل</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group IRANSansWeb-Light">
+                                    <label for="first-name"> نام</label>
+                                    <input autofocus class="form-control" id="first-name" max="64"
+                                           name="first-name" placeholder="نام" required type="text">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="IRANSansWeb-Light" for="last-name"> نام خانوادگی</label>
+                                    <input autofocus class="form-control IRANSansWeb-Light" id="last-name" max="64"
+                                           name="last-name" placeholder="نام خانوادگی" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group IRANSansWeb-Light">
+                            <label for="student-number">شماره دانشجویی</label>
+                            <input class="form-control" id="student-number" maxlength="8"
+                                   name="student-number"
+                                   placeholder="شماره دانشجویی" required size="8" type="text">
+                            <small class="form-text text-muted">
+                                شماره دانشجویی شما باید ۸ رقم باشد.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control custom-select IRANSansWeb-Light" id="gender-form-control-select"
+                                    required>
+                                <option selected value="-1">جنسیت</option>
+                                <option value="FEMALE">زن</option>
+                                <option value="MALE">مرد</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control custom-select IRANSansWeb-Light"
+                                    id="department-form-control-select" required>
+                                <option selected value="-1">رشته تحصیلی</option>
+                                <option value="1">کامپیوتر</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-lg btn-primary btn-block IRANSansWeb-Medium" type="submit">تغییر
+                                پروفایل
+                            </button>
+                        </div>
+                        <p class="mt-3 mb-0 text-muted text-center" dir="ltr">&copy;2019 - Spring System</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
